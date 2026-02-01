@@ -9,7 +9,7 @@ export const activities = [
       en: 'Papers accepted at ICSE co-located events',
     },
     description: {
-      pt: 'No WETSEB, foi aceito o artigo “Towards an Intelligent Platform for Supporting Quality Assessment in Blockchain Systems”. No MSR (Data and Tool Showcase), foi aceito o artigo “Web3BlockSet: A Dataset for Empirical Research in Blockchain-Oriented Software Engineering”, ambos eventos co-localizados com o ICSE.',
+      pt: 'No WETSEB, foi aceito o artigo “Towards an Intelligent Platform for Supporting Quality Assessment in Blockchain Systems” (Liderado por Raphael Saraiva). No MSR (Data and Tool Showcase), foi aceito o artigo “Web3BlockSet: A Dataset for Empirical Research in Blockchain-Oriented Software Engineering” (Liderado por Pamella Soares), ambos eventos co-localizados com o ICSE.',
       en: 'At WETSEB, the paper “Towards an Intelligent Platform for Supporting Quality Assessment in Blockchain Systems” was accepted. At MSR (Data and Tool Showcase), the paper “Web3BlockSet: A Dataset for Empirical Research in Blockchain-Oriented Software Engineering” was accepted, both co-located with ICSE.',
     },
     photos: [
