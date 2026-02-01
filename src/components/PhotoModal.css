@@ -1,0 +1,87 @@
+.photo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.photo-modal {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px 12px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.photo-modal-close:hover {
+  opacity: 1;
+}
+
+.photo-modal-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.photo-modal-img {
+  max-width: 80vw;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.photo-modal-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.photo-modal-arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.photo-modal-counter {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-top: 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .photo-modal-img {
+    max-width: 92vw;
+  }
+  .photo-modal-arrow {
+    font-size: 1.8rem;
+    padding: 6px 12px;
+  }
+}

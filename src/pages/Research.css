@@ -1,0 +1,144 @@
+.research-layout {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+}
+
+/* ── Year sidebar ── */
+.research-sidebar {
+  position: relative;
+}
+
+.year-nav {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.year-nav-btn {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.year-nav-btn:hover {
+  color: var(--blue-dark);
+  background: var(--blue-lightest);
+}
+
+.year-nav-btn.active {
+  color: var(--purple-dark);
+  font-weight: 700;
+  background: rgba(118, 99, 207, 0.08);
+  border-left-color: var(--purple-dark);
+}
+
+/* ── Papers ── */
+.research-main {
+  min-width: 0;
+}
+
+.research-year-group {
+  margin-bottom: 48px;
+  scroll-margin-top: 90px;
+}
+
+.research-year-group:last-child {
+  margin-bottom: 0;
+}
+
+.research-year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue-deepest);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--blue-lightest);
+}
+
+.research-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.paper-card {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  transition: box-shadow 0.2s;
+}
+
+.paper-card:hover {
+  box-shadow: 0 4px 20px rgba(118, 99, 207, 0.1);
+}
+
+.paper-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.paper-award {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+  padding: 3px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #92400e;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+.paper-award::before {
+  content: '\1F3C6';
+  font-size: 0.85rem;
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.paper-venue {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.paper-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .research-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .research-sidebar {
+    display: none;
+  }
+  .paper-card {
+    padding: 20px;
+  }
+}
