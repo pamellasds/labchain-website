@@ -45,7 +45,7 @@ export const translations = {
     members_title: 'Membros',
     members_subtitle: 'Conheça quem faz a pesquisa acontecer',
     members_coordinator: 'Coordenador',
-    members_researchers: 'Pesquisadores',
+    members_researchers: 'Discentes',
     members_collaborators: 'Colaboradores',
     members_interests: 'Interesses de Pesquisa',
 
@@ -149,7 +149,7 @@ export const translations = {
     members_title: 'Members',
     members_subtitle: 'Meet the people driving our research',
     members_coordinator: 'Coordinator',
-    members_researchers: 'Researchers',
+    members_researchers: 'Students',
     members_collaborators: 'Collaborators',
     members_interests: 'Research Interests',
 
