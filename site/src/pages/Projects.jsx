@@ -39,7 +39,7 @@ export default function Projects() {
                 <div className="project-info">
                   <h3 className="project-name">{getName(project.name)}</h3>
                   <p className="project-desc">{project.description[lang]}</p>
-                  {project.url && (
+                  {project.url && project.url !== '#' && (
                     <a
                       href={project.url}
                       target="_blank"

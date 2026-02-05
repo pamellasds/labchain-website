@@ -79,12 +79,12 @@ export default function Research() {
                         <p className="paper-venue">{paper.venue}</p>
                       </div>
                       <div className="paper-links">
-                        {paper.preprint && (
+                        {paper.preprint && paper.preprint !== '#' && (
                           <a href={assetUrl(paper.preprint)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline">
                             {t('view_preprint')}
                           </a>
                         )}
-                        {paper.publisherUrl && (
+                        {paper.publisherUrl && paper.publisherUrl !== '#' && (
                           <a href={paper.publisherUrl} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline">
                             {t('view_publisher')}
                           </a>
