@@ -6,8 +6,8 @@ export const projects = [
       en: 'Intelligent Chatbot',
     },
     description: {
-      pt: 'Chatbot inteligente para apoio a pesquisas e interações do laboratório, utilizando inteligência artificial para responder a perguntas sobre blockchain e auxiliar na disseminação do conhecimento produzido pelo Labchain.',
-      en: 'Intelligent chatbot to support lab research and interactions, using artificial intelligence to answer questions about blockchain and help disseminate knowledge produced by Labchain.',
+      pt: 'Explore métricas blockchain e tire dúvidas com um assistente inteligente em tempo real.',
+      en: 'Explore blockchain performance metrics and resolve questions through an intelligent real-time assistant.',
     },
     image: '/images/projects/chatbot.png',
     url: 'https://raphaelsaraiva.github.io/react-wiki-chatbot/',
